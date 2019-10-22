@@ -42,13 +42,11 @@ List<SuperHero> heroList;
         holder.heroName.setText(hero.getHeroName());
 
     }
-
     @Override
     public int getItemCount() {
         return (heroList != null) ? heroList.size() : 0;
 //        return 0;
     }
-
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView heroName;
         public MyViewHolder(@NonNull View itemView) {
