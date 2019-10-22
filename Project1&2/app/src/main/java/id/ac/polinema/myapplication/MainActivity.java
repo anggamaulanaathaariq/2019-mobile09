@@ -1,6 +1,7 @@
 package id.ac.polinema.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         RecycleAdapter recycleAdapter = new RecycleAdapter(listAlbum);
         //set adapter dan layoutmanager
         rvAlbum.setAdapter(recycleAdapter);
-        rvAlbum.setLayoutManager(new LinearLayoutManager(this));
+        rvAlbum.setLayoutManager(new GridLayoutManager(this,2));
 
     }
 }
